@@ -150,11 +150,11 @@ impl Application {
         let mut direct = BTreeMap::new();
         direct.insert(
             package::Name::new("elm", "core").unwrap(),
-            Version::new(1, 0, 3),
+            Version::new(1, 0, 5),
         );
         direct.insert(
             package::Name::new("elm", "json").unwrap(),
-            Version::new(1, 1, 3),
+            Version::new(1, 1, 4),
         );
         let deps = AppDependencies {
             direct,
@@ -163,7 +163,7 @@ impl Application {
 
         Self {
             source_directories: vec!["src".to_string()],
-            elm_version: Version::new(0, 19, 1),
+            elm_version: Version::new(0, 19, 3),
             dependencies: deps,
             test_dependencies: AppDependencies::new(),
             other: BTreeMap::new(),

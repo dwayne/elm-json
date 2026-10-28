@@ -170,6 +170,8 @@ impl Retriever {
                 Version::new(0, 18, 0),
                 Version::new(0, 19, 0),
                 Version::new(0, 19, 1),
+                Version::new(0, 19, 2),
+                Version::new(0, 19, 3),
             ],
         );
 
